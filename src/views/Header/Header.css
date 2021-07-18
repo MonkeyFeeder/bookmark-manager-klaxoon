@@ -1,0 +1,4 @@
+.header-view .navbar > .container {
+  /* !important pas très propre, mais ce n'est pas trop le focus de ce test */
+  justify-content: center !important;
+}

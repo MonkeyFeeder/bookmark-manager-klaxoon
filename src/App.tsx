@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import LandingPageContainer from './views/LandingPage/LandingPageContainer';
+import HeaderView from './views/Header/HeaderView';
 
-function App() {
+import './assets/bootstrap.min.css';
+
+// J'ai tendance à toujours utiliser return() malgré qu'il y ait une alternative plus courte, mais par habitude et par lisibilité je préfère utilise return()
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <HeaderView />
+      <LandingPageContainer />
+    </>
+  )
 }
 
 export default App;
