@@ -1,4 +1,4 @@
-export default interface MediaInterface {
+export interface MediaInterface {
   id: string | number;
   url: string;
   title: string;
@@ -9,5 +9,10 @@ export default interface MediaInterface {
   width: number;
   height: number;
   duration?: number;
-  tags: string[];
+  tags: Tag[];
+}
+
+export interface Tag {
+  id: string | number;
+  name: string;
 }

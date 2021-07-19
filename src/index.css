@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -16,6 +16,11 @@ a {
   /* Surchargé les a{} de Bootstrap, d'où les !important */
   color: inherit !important;
   text-decoration: none !important;
+}
+
+.landing-page-view button.btn,
+.media-edit-view button.btn {
+  margin: 10px;
 }
 
 .landing-page-view {
@@ -29,7 +34,7 @@ a {
 .landing-page-view .add-url {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;;
+  padding-bottom: 30px;
 }
 
 .landing-page-view .add-url input {
@@ -52,3 +57,12 @@ a {
   text-align: center;
 }
 
+.media-edit-view .taglist-wrapper {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.media-edit-view .taglist-wrapper .item {
+  padding-top: 20px;
+}
