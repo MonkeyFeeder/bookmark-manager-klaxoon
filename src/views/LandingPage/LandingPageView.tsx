@@ -1,17 +1,23 @@
-import React, { FC } from 'react';
-import { Container, Table } from 'react-bootstrap';
+import React, { ChangeEvent, FC, useState } from 'react';
+import { Button, Container, Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import MediaInterface from '../../constants/interfaces/Media';
-import { dateConverter, secondConverter } from '../../utilities/date';
-
-import './LandingPage.css';
 
 interface IProps {
   mediaList: MediaInterface[];
+  handleAddMedia: () => Promise<void>;
+  handleSetMedia: (event: ChangeEvent<HTMLInputElement>) => void;
+  renderMedias: JSX.Element[];
+  renderPageNumbers: JSX.Element[];
 }
 
-const LandingPageView: FC<IProps> = ({ mediaList }) => {
+const LandingPageView: FC<IProps> = ({ mediaList, handleAddMedia, handleSetMedia, renderMedias, renderPageNumbers }) => {
   return (
     <div className="landing-page-view">
+      <div className="add-url">
+        <Button onClick={handleAddMedia}>Ajouter Media</Button>
+        <input onChange={(event) => handleSetMedia(event)}  />
+      </div>
       <Container>
         <Table striped bordered hover>
           <thead>
@@ -24,41 +30,28 @@ const LandingPageView: FC<IProps> = ({ mediaList }) => {
               <th>Hauteur</th>
               <th>Durée</th>
               <th>Tags</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
-            {mediaList.map((media: MediaInterface) => {
-              console.log(media);
-              const {id, url, title, date, author, width, height, duration, tags} = media;
-
-              return (
-                <tr>
-                  <th>{url}</th>
-                  <th>{title}</th>
-                  <th>{author}</th>
-                  <th>{dateConverter(date as number)}</th>
-                  {width ? 
-                    <th>{width}</th>
-                    : <th></th>
-                  }
-                  {height ? 
-                    <th>{height}</th>
-                    : <th></th>
-                  }
-                  {
-                    duration ?
-                    <th>{secondConverter(duration)}s</th>
-                    : <th></th>
-                  }
-                  {tags ? 
-                    <th>{tags.join(', ')}</th>
-                    : <th></th>
-                  }
-                </tr>
-              )
-            })}
+            {mediaList.length > 0 ? renderMedias : 
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            }
           </tbody>
         </Table>
+        <div className="page-list">
+          <ul>
+            {renderPageNumbers}
+          </ul>
+        </div>
       </Container>
     </div>
   )

@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  /* Surchargé les a{} de Bootstrap, d'où les !important */
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.landing-page-view {
+  padding-top: 20px;
+}
+
+.landing-page-view {
+  list-style: none;
+}
+
+.landing-page-view .add-url {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;;
+}
+
+.landing-page-view .add-url input {
+  width: 20%;
+}
+
+.landing-page-view .page-list ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.landing-page-view .page-list li {
+  margin-left: 10px;
+}
+
+.media-edit-view {
+  padding-top: 50px;
+  text-align: center;
+}
+
