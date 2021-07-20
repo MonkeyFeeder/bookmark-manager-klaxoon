@@ -4,13 +4,12 @@ Ce ReadMe indiquera comment installer et utiliser l'application, et expliquera c
 
 ## Comment installer l'application ? 
 
- 1. Naviguez vers [ce lien](https://github.com/MonkeyFeeder/bookmark-manager-klaxoon)
- 2. Ouvrez un terminal de commande ( iTerm, Terminal, Cmd... )
- 3. Via ce terminal, déplacez vous dans le dossier dans lequel vous voulez installer l'application ( ex: "cd /Users/maell/Downloads" pour Mac, "cd username\programs\start menu" pour Windows )
- 4. Une fois dans le bon dossier, tapez "git clone https://github.com/MonkeyFeeder/bookmark-manager-klaxoon.git"
- 5. L'ordinateur va télécharger l'application. Une fois que c'est terminé, tapez "cd bookmark-manager-klaxoon"
- 6. Vous êtes désormais dans le dossier de l'application. Maintenant, tapez "npm install" pour installer les packages pour pouvoir faire fonctionner l'application
- 7. Enfin, tapez "npm start", le terminal devrait vous rediriger vers votre navigateur, et l'application devrait fonctionner.
+ 1. Ouvrez un terminal de commande ( iTerm, Terminal, Cmd... )
+ 2. Via ce terminal, déplacez vous dans le dossier dans lequel vous voulez installer l'application ( ex: "cd /Users/maell/Downloads" pour Mac, "cd username\programs\start menu" pour Windows )
+ 3. Une fois dans le bon dossier, tapez "git clone https://github.com/MonkeyFeeder/bookmark-manager-klaxoon.git"
+ 4. L'ordinateur va télécharger l'application. Une fois que c'est terminé, tapez "cd bookmark-manager-klaxoon"
+ 5. Vous êtes désormais dans le dossier de l'application. Maintenant, tapez "npm install" pour installer les packages pour pouvoir faire fonctionner l'application
+ 6. Enfin, tapez "npm start", le terminal devrait vous rediriger vers votre navigateur, et l'application devrait fonctionner.
 
 ## Comment utiliser l'application ?
 
