@@ -59,10 +59,10 @@ const LandingPageContainer: FC<IProps> = ({ mediaList, setMediaList }) => {
         )}
         <th>
           <Button>
-            <Link to={`/edit/${id}`}>Edit</Link>
+            <Link to={`/edit/${id}`}>Modifier</Link>
           </Button>
           <Button variant="danger" onClick={() => handleDelete(id as number)}>
-            Delete
+            Supprimer
           </Button>
         </th>
       </tr>
