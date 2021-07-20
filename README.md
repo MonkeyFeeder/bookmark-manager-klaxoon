@@ -17,7 +17,7 @@ Ce ReadMe indiquera comment installer et utiliser l'application, et expliquera c
 [Toutes les images sont disponibles ici](https://imgur.com/a/qNdg7Ic)
 
 Quand vous lancez l'application, vous arrivez sur la page d'accueil présente sur la première image.
-Sur cette page, vous trouverez la liste des marques pages ( vide pour l'instant ), un champ de texte ainsi qu'un bouton pour ajouter un marque page.
+Sur cette page, vous trouverez la liste des marques pages ( vide pour l'instant ), un champ de texte ainsi qu'un bouton pour ajouter un marque page. Si vous avez plus de 3 médias ajoutés, ils seront séparés en plusieurs pages ( par défaut, 3 ).
 
 Tapez ou copiez/collez un lien Flickr ou Vimeo dans le champ de texte (https://vimeo.com/48130434 ou [ce lien Flickr](https://www.flickr.com/photos/vandalehel/51305926457/in/photolist-2maJhsV-2m8i8eR-2m9MD8c-2m6D1vf-2mabwrk-2m8jLcM-2m755pw-2m8sUMx-2mbe6hu-2m6Dqqo-2ma2wXo-2mbMMgW-2maySxw-2m8XmJP-2mb6JyJ-2m95ToP-2m9QhjY-2mbynYG-2m8pYHX-2mbbXHn-2mbBMQz-2m6Z91r-2m7fbwj-2m7wCiR-2mbxGxM-2m85Eiu-2mbGXam-2ma5WNw-2ma1E5N-2m74zKv-2ma1E8D-2m6Nmaj-2m6Xnj4-2mbQKGA-2maGPGX-2m7pAxx-2m9rNc9-2m9VXBa-2m7tmbr-2m6hdP3-2m9uJZr-2m9DGNc-2maD4XD-2maMacc-2mbxhNC-2m88xUh-2m9AJa8-2m7Uhw9-2maXW4e-2maMZiK) pour essayer l'application, cf image 3), puis cliquez sur "Ajouter Média".
 
