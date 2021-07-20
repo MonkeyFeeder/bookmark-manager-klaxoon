@@ -39,4 +39,6 @@ Vous pouvez égaement supprimer un mot clef en cliquant sur le bouton "Supprimer
 
 Je n'ai pas utilisé de state management comme Redux ou Mobx ou même useContext car l'application est très petite et je n'en ressentais pas le besoin.
 
+Aucun backend n'est utilisé pour cette application, ce n'est que du front-end, les marques pages sont effacés lorsque vous rechargez la page.
+
 
